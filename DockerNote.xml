@@ -1,0 +1,49 @@
+
+We have to add this creadentials in settings.xml file
+<servers>
+	<server>
+		<id>registry.hub.docker.com</id>
+		<username>prashantaph</username>
+		<password>Prashanta@6362</password>
+	</server>
+</servers>
+
+
+Containerizing application to registry.hub.docker.com/prashantaph/google-jib-image-example...
+[[1;33mWARNING[m] Base image 'eclipse-temurin:8-jre' does not use a specific image digest - build may not be reproducible
+[[1;34mINFO[m] Using credentials from Maven settings file for registry.hub.docker.com/prashantaph/google-jib-image-example
+[[1;34mINFO[m] Getting manifest for base image eclipse-temurin:8-jre...
+[[1;34mINFO[m] Building dependencies layer...
+[[1;34mINFO[m] Building resources layer...
+[[1;34mINFO[m] Building classes layer...
+[[1;34mINFO[m] Building jvm arg files layer...
+[[1;34mINFO[m] The base image requires auth. Trying again for eclipse-temurin:8-jre...
+[[1;34mINFO[m] Using base image with digest: sha256:f1d5eb5ada211e4e66dda312635c98f689e0837fc02bbe82ebd12596bf34c6d0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Container entrypoint set to [java, -cp, /app/resources:/app/classes:/app/libs/*, com.springboot.SpringbootDockerApplication]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Built and pushed image as registry.hub.docker.com/prashantaph/google-jib-image-example
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------
+
+
+Docker image :- Is a file inside a docker container 
+Docker Container :- running instance of docker image
+
+Note : We can create any number of container
+	Ex : container1, container2, container3
+	
+Docker Repository :- Stroge pull docker images
+
+Docker Commands
+	1. docker images    :--> To list of images is there not in the system
+	2. docker pull (ubuntu) :--> To pull the cantainer from the docker hub 
+	3. docker ps   :--> TO check how many containers are running in the system
+	4. docker run -it(interactive mode) -d(detach) {image id}  :--> to run the cantainer
+	
+Docker file
+	
+
+
